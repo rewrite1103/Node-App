@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const { NODE_APP_HOSTNAME, NODE_APP_DATABASE} = process.env;
 
-const databaseConection = `mongodb://${NODE_APP_HOSTNAME}/${NODE_APP_DATABASE}`;
+const databaseConection = `mongodb://rewrite1103:NgsbDIqCF3YPLDyDELbETpbEnXAZcR0ebdeVS07630CXrNTs3seKIrKCd5k3yHcHDYnBWKI4mZW6ACDb0l0JfA==@rewrite1103.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@rewrite1103@`;
 
 
 mongoose.set("strictQuery", false);
