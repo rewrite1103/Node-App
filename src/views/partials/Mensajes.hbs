@@ -1,0 +1,19 @@
+{{#if Todo_correcto}}
+<div class="espf alert alert-success alert-dismissible fade show" role="alert">
+   {{Todo_correcto}}
+  <button type="button" class="btsmesn btn-close" data-bs-dismiss="alert" aria-label="Close">
+    <span arial-hidden="true" >&times;</span>
+  </button>
+</div>
+
+{{/if}}
+
+{{#if error_msg}}
+<div class="espf alert alert-danger alert-dismissible fade show" role="alert">
+   {{error_msg}}
+  <button type="button" class="btsmesn btn-close" data-bs-dismiss="alert" aria-label="Close">
+    <span arial-hidden="true" >&times;</span>
+  </button>
+</div>
+
+{{/if}}

@@ -1,0 +1,23 @@
+<div class="row">
+    {{#each Notass}}
+      <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{title}}
+                    <a href="/nota/editar/{{_id}}"><i class="fa-solid fa-file-pen"></i></a>
+                </h4>
+                <p>
+                  {{description}}
+                </p>
+
+                <form action="/nota/delete/{{_id}}?_method=delete" method="post">
+                <input type="hidden" name="_method" value="delete">
+                 <button type="submit" class="btn btn-danger btn-block btn-sm">Eliminar</button>
+                </form>
+            </div>
+        </div>
+
+      </div>
+    {{/each}}
+</div>

@@ -1,0 +1,56 @@
+<nav class="espnavcolor navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <div class="container-fluid">
+      <a class="navbar-brand espnav" href="/">App de Notas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-sharp fa-solid fa-bomb"></i>
+
+
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/acerca">Acerca</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          {{#if user}}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nota
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/nota">Ver Notas</a></li>
+              <li><a class="dropdown-item" href="/nota/add">Agregar Nota</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/Out">Salir</a></li>
+            </ul>
+          </li>
+
+          {{else}}
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="/Register">Registarse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Login">Login</a>
+          </li>
+
+          {{/if}}
+        </ul>
+
+
+      </div>
+    </div>
+
+  </div>
+</nav>
