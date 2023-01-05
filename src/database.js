@@ -11,9 +11,7 @@ mongoose.set("strictQuery", false);
 
 mongoose.connect(databaseConection,{
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    directConnection: true
-
+    useUnifiedTopology: true
 })
  .then(db => console.log('Database is connected'))
  .catch(err => console.log(err));
